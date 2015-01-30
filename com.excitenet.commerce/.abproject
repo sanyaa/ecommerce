@@ -1,0 +1,37 @@
+{
+  "ProjectName": "com.excitenet.commerce",
+  "ProjectGuid": "99582d07-73ba-4126-9eda-c71bfa6c14be",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.comexcitenetcommerce",
+  "DisplayName": "com.excitenet.commerce",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{398a0fc4-a8d4-4d38-8c4b-c860dd050bdf}",
+  "WP8ProductID": "{bb7e9a35-1a12-4b06-be25-95884efee912}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
