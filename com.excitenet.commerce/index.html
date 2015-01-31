@@ -12,28 +12,32 @@
 </head>
 <body>
     <div data-role="layout" data-id="layout1">
+		<header data-role="header">
+			<div data-role="navbar">
+				<a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+				<span data-role="view-title"></span>
+				<a data-align="right" data-role="button" class="nav-button" href="#/">Index</a>
+			</div>		
+		</header>	
 		
-	</div>
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a data-role="button" data-icon="camera" href="">Button</a>
+				<a data-role="button" data-icon="home" href="">Button</a>
+				<a data-icon="favorites" href="">Button</a>
+			</div>
+		</div>		
+	</div> 
 	
-	<div data-role="layout" data-id="defaultLayout">
-	
-	</div>
-								
-    <div id="View1" data-role="view" data-layout="layout1">
-        <div data-role="header"></div>    
-        <div data-role="footer">
-            <div data-role="tabstrip">
-                <a data-role="button" data-icon="camera" href="">Button</a>
-                <a data-role="button" data-icon="home" href="">Button</a>
-                <a data-icon="favorites" href="">Button</a>
-            </div>
-        </div>
+	<div id="View1" data-role="view" data-layout="layout1">
+            
         <ul data-role="listview" data-style="inset">
             <li>ListItem</li>
             <li>ListItem</li>
             <li>ListItem</li>
         </ul>
-    </div>
+        
+ </div>
 	
 	
 	<script>
