@@ -8,40 +8,35 @@
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
-    
+    <script src="scripts/app.js"></script>
 </head>
 <body>
-    <div data-role="layout" data-id="layout1">
+    <div data-role="layout" data-id="main">
 		<header data-role="header">
 			<div data-role="navbar">
-				<a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+				<!--<a class="nav-button" data-align="left" data-role="backbutton">Back</a>-->
 				<span data-role="view-title"></span>
 				<a data-align="right" data-role="button" class="nav-button" href="#/">Index</a>
-			</div>		
-		</header>	
+			</div>
+		</header>
+
+    	<p>TabStrip</p>
+	
 		
 		<div data-role="footer">
-			<div data-role="tabstrip">
-				<a data-role="button" data-icon="camera" href="">Button</a>
-				<a data-role="button" data-icon="home" href="">Button</a>
-				<a data-icon="favorites" href="">Button</a>
-			</div>
-		</div>		
+            <div data-role="tabstrip">
+                <a href="views/home.html" data-icon="home">Home</a>   
+                <a href="views/settings.html" data-icon="settings">Settings</a>
+                <a href="views/contacts.html" data-icon="contacts">Contacts</a>
+            </div>
+        </div>
 	</div> 
 	
-	<div id="View1" data-role="view" data-layout="layout1">
-            
-        <ul data-role="listview" data-style="inset">
-            <li>ListItem</li>
-            <li>ListItem</li>
-            <li>ListItem</li>
-        </ul>
-        
- </div>
+	
 	
 	
 	<script>
-    var app = new kendo.mobile.Application(document.body);
+    //var app = new kendo.mobile.Application(document.body);
 </script>
 </body>
 </html>
