@@ -53,8 +53,39 @@
         // the application needs to know which view to load first
         initial: 'views/home.html'
       });
+        
+        
+        // creating a customer: https://stripe.com/docs/api#create_customer
+        stripe.customers.create(
+            {
+              description : "John Doe",
+              email :  "john@telerik.com"
+            },
+            function (response) {alert("Customer created:\n\n" + JSON.stringify(response))},
+            function(response) {alert(JSON.stringify(response))}  // error handler
+        );
+        
+        
+        
+        // Wait for device API libraries to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+             var ref = window.open('http://apache.org', '_blank', 'location=yes');
+             ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+             ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+             ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+             ref.addEventListener('exit', function(event) { alert(event.type); });
+        } 
+        
+        
 
     }, false);
 
+    
+    
 
 }());
